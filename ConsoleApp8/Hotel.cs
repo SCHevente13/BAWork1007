@@ -29,7 +29,14 @@ namespace ConsoleApp8
         {
             return _owner;
         }
-
+        public double Discount(int percent)
+        {
+            return PricePerNight * ((100 - percent) / 100);
+        }
+        public double DiscountButUpwards(int percent)
+        {
+            return PricePerNight * (100 + percent / 100);
+        }
 
     }
 }
